@@ -20,7 +20,9 @@ class Turkey{
        public function fly(){
               echo "I'm flying a short distance \n";
        }
-}class TurkeyAdapter implements Duck {
+}
+
+class TurkeyAdapter implements Duck {
        private $turkey;
    
        public function __construct(Turkey $turkey) {
@@ -36,10 +38,5 @@ class Turkey{
                $this->turkey->fly();
            }
        }
-   }
-   
-   function duck_interaction($duck) {
-       $duck->quack();
-       $duck->fly();
    }
 ?>
