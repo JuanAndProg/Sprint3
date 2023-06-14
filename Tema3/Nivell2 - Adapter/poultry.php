@@ -22,7 +22,7 @@ class Turkey{
        }
 }
 
-class TurkeyAdapter implements Duck {
+class TurkeyAdapter extends Duck {
        private $turkey;
    
        public function __construct(Turkey $turkey) {
